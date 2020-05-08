@@ -16,3 +16,5 @@ const streamOpts = {
     subreddit: 'all',
     results: 25
 };
+
+const comments = client.CommentStream(streamOpts);
