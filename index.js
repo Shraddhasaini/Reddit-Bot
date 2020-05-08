@@ -19,6 +19,7 @@ const streamOpts = {
 
 const comments = client.CommentStream(streamOpts);
 comments.on('comment', (comment) => {
-    console.log(comment);
+  if (comment.body === 'nice') {
+  comment.reply('very nice');
+}
 });
-  
