@@ -12,7 +12,7 @@ const r = new Snoowrap({
 	password: process.env.REDDIT_PASS
 });
 
-const stream = new CommentStream(r, { subreddit: "testingground4bots", results: 25 });
+const stream = new CommentStream(r, { subreddit: "all", results: 25 });
 
 stream.on("item", comment => {
   if (comment.body === 'nice') {
