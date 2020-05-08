@@ -15,7 +15,7 @@ const r = new Snoowrap({
 const stream = new CommentStream(r, { subreddit: "testingground4bots", results: 25 });
 
 stream.on("item", comment => {
-  if (comment.body === ':(') {
-  comment.reply(':)');
+  if (comment.body === 'nice') {
+  comment.reply('very nice');
 }
 })
