@@ -11,3 +11,8 @@ const r = new Snoowrap({
     password: process.env.REDDIT_PASS
 });
 const client = new Snoostorm(r);
+
+const streamOpts = {
+    subreddit: 'all',
+    results: 25
+};
