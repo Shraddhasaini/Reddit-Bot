@@ -1,0 +1,6 @@
+version: '3.8'
+services:
+  nodebot:
+    image: redditbot
+    build: . #loc of dockerfile
+    container_name: redditbotc1 #optional
