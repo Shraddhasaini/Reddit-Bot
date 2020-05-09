@@ -15,7 +15,17 @@ const r = new Snoowrap({
 const stream = new CommentStream(r, { subreddit: "all", results: 25 });
 
 stream.on("item", comment => {
-  if (comment.body === 'nice') {
-  comment.reply('very nice');
+switch(comment.body) {
+  case 'nice':
+    comment.reply('very nice');
+    break;
+  case ':(':
+    comment.reply(':)');
+    break;
+	case 'Press F to pay respect':
+		comment.reply('F');
+		break;
+	case 'Happy cake day':
+		comment.reply('Happy Cake Day!');
 }
 })
