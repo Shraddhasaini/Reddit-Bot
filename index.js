@@ -25,6 +25,9 @@ switch(comment.body) {
 	case 'Press F to pay respect':
 		comment.reply('F');
 		break;
+	case 'Are you a bot?':
+		comment.reply('Yes, I am a bot!');
+		break;
 	case 'Happy cake day':
 		comment.reply('Happy Cake Day!');
 }
